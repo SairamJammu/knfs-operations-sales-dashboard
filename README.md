@@ -1,4 +1,6 @@
 # Kent Natural Food Store – Operations & Sales Dashboard
+![Dashboard Overview](Screenshots/overview-dashboard.png)
+
 
 ##  Project Overview
 This project involved designing and developing an **interactive Power BI dashboard** for **Kent Natural Food Store (KNFS)**, a community-owned grocery co-op specializing in organic, local, and environmentally sustainable products.
