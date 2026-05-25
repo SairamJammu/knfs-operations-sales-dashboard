@@ -1,124 +1,63 @@
-# Kent Natural Food Store – Operations & Sales Dashboard
+# Kent Natural Food Store Operations and Sales Dashboard
+
+Power BI dashboard project for sales, inventory, reorder alerts, gross margin, and department-level performance at Kent Natural Food Store.
+
 ![Dashboard Overview](Screenshots/overview-dashboard.png)
 
+## Portfolio Summary
 
-##  Project Overview
-This project involved designing and developing an **interactive Power BI dashboard** for **Kent Natural Food Store (KNFS)**, a community-owned grocery co-op specializing in organic, local, and environmentally sustainable products.
+This project transforms raw sales, inventory, and cost data into an interactive decision-support dashboard. The dashboard is designed around operational questions for buyers and managers, including what to reorder, which departments drive sales, and where inventory is aging.
 
-The goal was to provide **clear visibility into sales, inventory, and operational performance** to support better purchasing, replenishment, and inventory management decisions by department buyers.
+## Business Context
 
-This project was completed as part of the **Data Visualization (BA-54050)** course in the MS Business Analytics program at Kent State University.
+Kent Natural Food Store is a community-owned grocery co-op with multiple departments and buyers. Historical point-of-sale and inventory data had not been systematically analyzed, limiting visibility into sales patterns, stock risk, and profitability.
 
----
+## Business Questions
 
-##  Business Context
-KNFS operates across **21 departments** with **7 buyers**, each responsible for pricing and ordering within their assigned categories.  
-Although KNFS uses a Point-of-Sale system, historical data had **not been systematically analyzed**, leading to limited insight into:
-- What items to reorder
-- When to reorder
-- How much inventory to hold
-- Which products and departments drive profitability
+The dashboard answers:
 
-The dashboard addresses these gaps by transforming raw POS, inventory, and cost data into **actionable decision-support visuals**.
+- Which items sell the most and least?
+- Which departments drive the most sales?
+- How much inventory is currently held by quantity and value?
+- Which products are below reorder point?
+- Which items have been in inventory the longest?
+- What are total sales, cost of goods sold, and gross margin?
 
----
+## Data Preparation
 
-##  Business Questions Addressed
-The dashboard directly answers the following operational and sales questions:
+Key preparation steps included:
 
-1. Which items are selling the most?
-2. Which items are selling the least (by department)?
-3. How much inventory do we have (by quantity and value)?
-4. Which items should be reordered soon, and in what quantity?
-5. Which items have been in inventory the longest (with focus on perishables)?
-6. What are total sales and cost of goods sold (COGS)?
-7. Which departments generate the most sales?
-8. What is the overall sales, cost, and gross margin performance of the store?
+- Cleaning product, department, and category fields
+- Resolving missing and inconsistent values
+- Modeling relationships across sales, inventory, and cost tables
+- Creating DAX measures for sales, COGS, gross margin, inventory value, aging, and reorder quantities
 
----
+## Dashboard Features
 
-##  Data Sources
-The analysis integrates multiple datasets provided by KNFS:
-
-- **Sales Transactions** (Jan 1 – Apr 16, 2024)
-- **Inventory Listings** (snapshot as of Apr 16, 2024)
-- **Below-Reorder Inventory Reports**
-- **Department-level Cost of Goods Sold**
-- **Department Markup Rates**
-
-Because the data was not fully normalized, significant preprocessing and transformation were required before analysis.
-
----
-
-##  Data Preparation & Modeling
-Key data engineering steps included:
-
-- Cleaning and standardizing product names, categories, and departments
-- Resolving missing values and inconsistent formatting
-- Creating relationships across sales, inventory, and cost tables
-- Developing calculated fields and measures using **DAX**, including:
-  - Total Sales
-  - Cost of Goods Sold
-  - Gross Margin ($ and %)
-  - Inventory Value
-  - Inventory Aging
-  - Reorder Quantity Requirements
-
-These steps enabled dynamic and accurate dashboard interactions.
-
----
-
-##  Dashboard Features
-The Power BI dashboard includes:
-
-- KPI cards for Total Sales, COGS, Gross Margin
-- Top and bottom performing products and departments
+- KPI cards for sales, COGS, and gross margin
+- Top and bottom product analysis
+- Department-level performance views
 - Inventory quantity and value analysis
-- Reorder alerts for items below reorder point
-- Inventory aging analysis with emphasis on perishables
-- Interactive filters for departments, categories, and products
+- Reorder alerts
+- Inventory aging views with emphasis on perishables
+- Interactive filters by department, category, and product
 
-Each visual was designed to directly answer a specific buyer or management question.
+## Key Insights
 
----
+- Produce and packaged dry goods were major sales drivers.
+- Products below reorder point indicated stockout risk.
+- Long-held inventory tied up capital and shelf space.
+- Gross margin analysis provided a clearer view of store performance.
 
-##  Key Insights & Recommendations
-- **Produce and Packaged Dry Goods** drive the highest sales and should be prioritized for availability.
-- Several products are **below reorder points**, indicating risk of stockouts.
-- Certain items have been held in inventory for **over 300 days**, tying up capital and shelf space.
-- The store achieves a **gross margin of ~41%**, indicating healthy overall performance.
-- Low-performing departments (e.g., Vitamins, some specialty categories) may benefit from promotions, assortment reduction, or pricing review.
+## Tools
 
----
+Power BI, DAX, data modeling, dashboard design, business intelligence, inventory analytics.
 
-##  Limitations & Future Enhancements
-- Customer-level data was unavailable, limiting repeat-purchase analysis.
-- Shelf-space dimensions were not provided, preventing spatial sales optimization.
-- Predictive demand modeling could further improve reorder decisions if historical trends are extended.
+## Portfolio Value
 
-Future iterations could incorporate:
-- Customer repeat behavior
-- Predictive purchasing models
-- Price sensitivity simulations
-- Shelf-space efficiency analysis
+This project demonstrates dashboard design around real operational decisions, not just visual display. It connects raw data transformation, KPI logic, and actionable recommendations.
 
----
+## Author
 
-##  Tools & Technologies
-- **Power BI**
-- **DAX**
-- **Excel / CSV datasets**
-- Data cleaning & transformation techniques
-
----
-
-##  Team
-Group Project – Data Visualization  
-- Bhavya Jeevani Thandu  
-- **Sairam Jammu**  
-- Eric Draper  
-
----
-
-## 👤 Author Focus
-This repository highlights my contribution to **data modeling, dashboard design, KPI development, and insight interpretation**, with a focus on using visualization to support real-world business decisions.
+Sairam Jammu  
+M.S. Business Analytics, Kent State University
